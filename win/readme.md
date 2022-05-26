@@ -2,4 +2,4 @@
 
 ### How to use?
 ---
-Run! Run! Run!
+Run with admin rules.
