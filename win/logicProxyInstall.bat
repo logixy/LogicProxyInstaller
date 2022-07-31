@@ -10,10 +10,9 @@ echo     \/___/  \/___/  \/___L\ \/_/\/____/ \/_/ \/_/\/___/  \/_/   \/_/   \/_/
 echo                       /\____/                                                                                   /\___/
 echo                       \_/__/                                                                                    \/__/ 
 
-SET NEWLINE=^& echo.
 
 FIND /C /I "51.158.173.225" %WINDIR%\system32\drivers\etc\hosts
-IF %ERRORLEVEL% NEQ 0 ECHO %NEWLINE%^51.158.173.225 play.logicworld.ru s2.logicworld.ru>>%WINDIR%\System32\drivers\etc\hosts
+IF %ERRORLEVEL% NEQ 0 (ECHO,&ECHO %NEWLINE%^51.158.173.225 play.logicworld.ru s2.logicworld.ru)>>%WINDIR%\System32\drivers\etc\hosts
 
 echo LogicProxy install complete.
 pause
