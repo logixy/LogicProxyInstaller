@@ -13,6 +13,7 @@ echo                       \_/__/                                               
 
 FIND /C /I "51.158.173.225" %WINDIR%\system32\drivers\etc\hosts
 IF %ERRORLEVEL% NEQ 0 (ECHO,&ECHO 51.158.173.225 play.logicworld.ru s2.logicworld.ru)>>%WINDIR%\System32\drivers\etc\hosts
+IF %ERRORLEVEL% NEQ 0 (ECHO,&ECHO 51.158.173.225 play.logixy.net s2.logixy.net)>>%WINDIR%\System32\drivers\etc\hosts
 
 echo LogicProxy install complete.
 pause
